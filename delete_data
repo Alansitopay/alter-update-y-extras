@@ -1,0 +1,5 @@
+SELECT id, title, released, actor, director, box_office
+	FROM public.bond;
+
+DELETE FROM Bond
+WHERE title = 'FF7';
