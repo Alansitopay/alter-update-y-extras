@@ -1,0 +1,4 @@
+SELECT s.nombre AS sucursal, COUNT(e.id) AS cantidad_empleados
+FROM empleados e
+JOIN sucursales s ON e.sucursal_id = s.id
+GROUP BY s.nombre;
